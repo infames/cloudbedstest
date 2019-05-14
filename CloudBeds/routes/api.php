@@ -15,7 +15,7 @@ $klein->respond('POST', '/api/intervals/save', function ($request, $response, $s
     return $app->container->savePriceIntervals($request);
 });
 
-$klein->respond('GET', '/api/intervals/list', function ($request, $response, $service, $app) {
+$klein->respond('GET', '/api/intervals/', function ($request, $response, $service, $app) {
     return $app->container->listIntervals();
 });
 
