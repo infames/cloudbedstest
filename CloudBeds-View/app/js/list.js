@@ -5,7 +5,7 @@ $(document).ready(function() {
     const url = window.location.origin;
     const apiUrl = 'http://ec2-54-188-222-158.us-west-2.compute.amazonaws.com';
 
-    axios.get(apiUrl + '/api/intervals/list')
+    axios.get(apiUrl + '/api/intervals/')
 
         .then(function (intervals) {
             $.each( intervals, function( index, interval ){
