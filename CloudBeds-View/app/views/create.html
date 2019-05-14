@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/create.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/create.js"></script>
+
+</head>
+<body>
+
+<div class="container-fluid">
+
+    <div class="container-fluid">
+        <nav class="navbar sticky-top navbar-light bg-light">
+            <a class="navbar-brand" href="#">Cloud Beds</a>
+        </nav>
+    </div>
+
+    <div class="container createForm">
+        <form id="createIntervalForm">
+            <div class="form-group">
+                <label>Start Date</label>
+                <input type="date" class="form-control" id="startDate" aria-describedby="emailHelp" placeholder="Star Date" required>
+            </div>
+            <div class="form-group">
+                <label>End Date</label>
+                <input type="date" class="form-control" id="endDate" placeholder="End Date" required>
+            </div>
+            <div class="form-group">
+                <label>Price</label>
+                <input type="number" class="form-control" id="price" placeholder="Price" step="any" required>
+            </div>
+            <button type="submit" class="btn btn-success">save</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

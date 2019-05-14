@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/list.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+
+    <div class="container-fluid">
+        <nav class="navbar sticky-top navbar-light bg-light">
+            <a class="navbar-brand" href="#">Cloud Beds</a>
+        </nav>
+    </div>
+
+    <div class="container createIntervalButton">
+        <a href="/CloudBeds-View/app/views/create.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Create</a>
+        <a style="margin-right: 10%" id="migrate" href="#" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Migrate Database</a>
+    </div>
+
+    <div class="container listIntervalsContainer">
+        <table id="listIntervals" class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col" >Start Date</th>
+                <th scope="col" >End Date</th>
+                <th scope="col" >Price</th>
+                <th scope="col" >Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+</body>
+</html>

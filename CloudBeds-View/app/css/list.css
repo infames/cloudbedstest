@@ -1,0 +1,13 @@
+
+
+.listIntervalsContainer {
+    padding-top: 7%;
+}
+
+.createIntervalButton {
+    padding-top: 3%;
+}
+
+.createIntervalButton > a {
+    float: right;
+}

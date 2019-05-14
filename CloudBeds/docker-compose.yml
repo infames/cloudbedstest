@@ -1,0 +1,52 @@
+version: '2.1'
+
+services:
+
+  nginx:
+    build: ./docker/nginx/
+    ports:
+      - "80:80"
+    volumes:
+      - .:/var/www/html
+    networks:
+      - dockerlocal
+
+  php:
+    build: ./docker/php/
+    volumes:
+      - .:/var/www/html
+    networks:
+      - dockerlocal
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8080:80"
+    environment:
+      MYSQL_USERNAME: root
+      MYSQL_ROOT_PASSWORD: root
+      PMA_HOST: mysql
+    networks:
+      - dockerlocal
+
+  mysql:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: alfi
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    volumes:
+      - linkkmysqldata:/var/lib/mysql
+    networks:
+      - dockerlocal
+
+networks:
+  dockerlocal:
+    driver: "bridge"
+
+volumes:
+  linkkmysqldata:
+    driver: "local"
