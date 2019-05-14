@@ -50,7 +50,7 @@ $(document).ready(function() {
             "<td>"+endDate+"</td>" +
             "<td>"+price+"</td>" +
             "<td class='align-middle'>" +
-                "<a style='margin-left: 10%' id ='updateInterval' name='"+id+"' class='btn btn-warning' href='"+window.location.origin+"/CloudBeds-View/app/views/edit.html?id="+id+"' role='button'>Edit</a>"+
+                "<a style='margin-left: 10%' id ='updateInterval' name='"+id+"' class='btn btn-warning' href='"+url+"/app/views/edit.html?id="+id+"' role='button'>Edit</a>"+
                 "<a style='margin-left: 10%' id ='deleteInterval' name='"+id+"' class='btn btn-danger' href= '#' role='button'>Delete</a>"+
             "</td>"+
             "</tr>"
