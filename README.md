@@ -1,4 +1,4 @@
-# Clod Beds Test
+# Cloud Beds Test
 
 A interval price manager
 
