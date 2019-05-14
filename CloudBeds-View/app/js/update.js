@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
     const url = window.location.origin;
-    const apiUrl = null;
+    const apiUrl = 'ec2-54-188-222-158.us-west-2.compute.amazonaws.com';
+
     id = getUrlParameter('id');
 
     axios.get('http://localhost/api/intervals/'+ id).then(function (response) {
