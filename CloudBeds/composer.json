@@ -10,7 +10,6 @@
   },
   "autoload": {
     "classmap": [
-      "App/Models",
       "App/Controllers"
     ]
   }
