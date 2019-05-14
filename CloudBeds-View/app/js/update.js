@@ -5,7 +5,7 @@ $(document).ready(function() {
 
     id = getUrlParameter('id');
 
-    axios.get('http://localhost/api/intervals/'+ id).then(function (response) {
+    axios.get(apiUrl+'/api/intervals/'+ id).then(function (response) {
 
         $('#endDate').text(response.data.response.end_date);
         $('#endDate').val(response.data.response.end_date);
